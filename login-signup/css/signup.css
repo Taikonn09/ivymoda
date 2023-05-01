@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Medium.woff') format('woff'),
+        url('../../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container-signup{
+    width: 680px;
+    margin: 0px auto;
+}
+
+.form-signup{
+    margin-top: 110.8px;
+    border-left: 1px solid #E7E8E9;
+    border-right: 1px solid #E7E8E9;
+}
+.form-signup h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.form-signup form{
+    padding: 20px 0px;
+}
+
+.input-box{
+    width: 80%;
+    height: 50px;
+    margin: 35px auto 35px auto;
+    position: relative;
+}
+.input-box span{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    font-size: 25px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    color: #777;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 1px solid #6c6d70;
+    padding: 0px 25px;
+    font-size: 17px;
+    border-radius: 10px;
+
+} 
+
+.input-box input:focus + label, .input-box input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 10px;
+    background-color: #fff;
+    padding: 0px 10px;
+    color: #000;
+    font-size: 17px;
+}
+.input-box input:not(:placeholder-shown), .input-box input:focus{
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+
+form p{
+    text-align: center;
+    margin-top: -15px;
+}
+
+form div button{
+    margin-top: 40px;
+    font-size: 25px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 100px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 80%;
+}
+form div button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.location-page{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin-top: 15px;
+}
+.location-page a{
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.location-page a:hover{
+    text-decoration: underline;
+    color: #ac2f33;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Trang chủ | IVY Moda</title>
+</head>
+
+<body>
+    <div class="container-page">
+        <header id="header-page" #top>
+            <nav class="nav-page">
+                <li>
+                    <a href="">Nữ</a>
+                    <!-- <ul>
+                        <li>Áo</li>
+                        <li>Quần</li>
+                        <li>Váy</li>
+                       </ul> -->
+                </li>
+                <li><a href="">nam</a></li>
+                <li><a href="">trẻ em</a></li>
+                <li><a style="color: #ff0000" href="">sale đại lễ</a></li>
+                <li><a href="">bộ sưu tập</a></li>
+                <li><a href="">lifestyle</a></li>
+                <li><a href="">về chúng tôi</a></li>
+            </nav>
+
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo YVI">
+            </a>
+
+            <article class="header-right">
+                <section class="header-right-item">
+                    <button type="submit" action="tk.php" method="POST"><span
+                            class="material-symbols-outlined">search</span></button>
+                    <input type="text" placeholder="TÌM KIẾM SẢN PHẨM">
+
+                    <ul>
+                        <li><a href="#"><span class="material-symbols-outlined">headphones</span></a></li>
+                        <li><a href="login-signup/"><span class="material-symbols-outlined">person</span></a></li>
+
+                        <!-- ------------------------------------------------giỏ hàng------------------------------------ -->
+                        <li>
+                            <a class="shopping-cart" onclick="showCart()">
+                                <span class="material-symbols-outlined">local_mall</span>
+                                <!-- <p id="lenght-cart">0</p> -->
+                            </a>
+
+                            <div id="show-cart">
+                                <div>
+                                    <p class="title-cart">Giỏ hàng</p>
+                                    <button style="background-color: #000; color: #fff;" class="close-btn" type="button"
+                                        onclick="hideCart()"><span
+                                            class="material-symbols-outlined">close</span></button>
+                                </div>
+
+                                <div id="my-cart">
+                                    <p id="cart-items"></p>
+                                    <p id="cart-total">Tổng tiền: 0 đ</p>
+                                </div>
+
+                                <div id="checkout">
+                                    <button class="view-cart">
+                                        <a href="cart.html">Xem giỏ hàng</a>
+                                    </button>
+
+                                    <button type="submit">
+                                        <a href="pay.html">Thanh toán</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+        </header>
+    </div>
+
+    <main>
+        <section class="banner-page">
+            <img src="images/banner1.jpg" alt="banner1">
+        </section>
+
+        <section class="input-radio">
+            <input type="radio" checked>
+            <input type="radio">
+            <input type="radio">
+        </section>
+
+        <section class="new-product container-page">
+            <h1>New Arrival</h1>
+
+            <ul id="product-list">
+                <li class="product-item" data-product-id="1" data-product-name="Đầm xòe thắt dây eo">
+                    <span class="badget">-30%</span>
+                    <a href="#"><img src="images/product1.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm xòe thắt dây eo</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">1.113.000đ</p>
+                            <p class="price-old">1.590.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <span class="badget">-30%</span>
+                    <a href="#"><img src="images/product2.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm quây ngực đính khuy</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">1.113.000đ</p>
+                            <p class="price-old">1.590.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <span class="badget">-30%</span>
+                    <a href="#"><img src="images/product3.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm chiffon cổ V</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">1.113.000đ</p>
+                            <p class="price-old">1.590.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <span class="badget">-30%</span>
+                    <a href="#"><img src="images/product4.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm lụa cổ V tay rút nhúm</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">1.113.000đ</p>
+                            <p class="price-old">1.590.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <span class="badget">-30%</span>
+                    <a href="#"><img src="images/product5.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm lụa rút dây eo</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">1.113.000đ</p>
+                            <p class="price-old">1.590.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="show-item" type="button">
+                Xem tất cả
+            </button>
+        </section>
+
+        <section class="new-product container-page">
+            <h1>Best seller</h1>
+
+            <ul id="product-list">
+                <li class="product-item">
+                    <a href="#"><img src="images/product6.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Áo 2 dây dáng xòe</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">595.000đ</p>
+                            <p class="price-old">1.190.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <a href="#"><img src="images/product7.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm thô 1 lớp xẻ eo</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">875.000đ</p>
+                            <p class="price-old">1.750.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <a href="#"><img src="images/product11.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">sét áo crop top và chân váy bí ngô</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">990.000đ</p>
+                            <p class="price-old">1.980.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <a href="#"><img src="images/product12.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm maxi dập ly</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">985.000đ</p>
+                            <p class="price-old">1.790.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <a href="#"><img src="images/product13.jpg" alt="product-img"></a>
+                    <div>
+                        <!-- màu sp -->
+                    </div>
+                    <p class="product-name">Đầm lụa cổ đổ</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="product-price">
+                            <p class="price-new">745.000đ</p>
+                            <p class="price-old">1.490.000đ</p>
+                        </div>
+
+                        <button type="button" class="add-to-cart">
+                            <span class="material-symbols-outlined">local_mall</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="show-item" type="button">Xem tất cả</button>
+        </section>
+    </main>
+
+    <button class="top-page-btn">
+        <span class="material-symbols-outlined">expand_less</span>
+    </button>
+</body>
+<script src="js/app.js"></script>
+
+</html>

@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Medium.woff') format('woff2'),
+        url('../../fonts/Montserrat-Medium.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-login {
+    width: 90%;
+    margin: 0px auto;  
+}
+
+#main-login-page {
+    margin-top: 110.8px;
+    display: flex;
+}
+
+.login-page,
+.signup-page{
+    width: 50%;
+    text-align: center;
+} 
+
+.login-page{
+   margin: 0px 80px 0px 50px;
+}
+.signup-page{
+    margin: 0px 50px 0px 80px;
+}
+
+.login-form h1,
+.signup-form h1 {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    color: #221f20;
+    margin-bottom: 20px;
+}
+
+.login-form p,
+.signup-form p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #6c6d70;
+}
+
+.login-form input[type='text'], .login-form input[type='password']{
+    width: 90%;
+    height: 50px;
+    margin: 10px 0px;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #6c6d70;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    margin: 35px auto 35px auto;
+    position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    top: 69%;
+    left: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    color: #999;
+}
+
+.input-box input:focus + label, .input-box input:not(:placeholder-shown) + label{
+    top: 10px;
+    left: 40px;
+    background-color: #fff;
+    padding: 0px 10px;
+    color: #000;
+    font-size: 17px;
+}
+.input-box input:not(:placeholder-shown), .input-box input:focus{
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+
+.remember-check {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.remember-check input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}
+.remember-check p{
+    font-size: 20px;
+    align-items: center;
+    margin-left: 10px;
+    bottom: 0px;
+}
+
+.link--{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link-- a{
+    color: #221f20;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.link-- a:hover{
+    color: #ac2f33;
+    text-decoration: underline ;
+}
+.login-form button,
+.signup-form button {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #221f20;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.signup-form button a{
+    color: #fff;
+}
+
+.login-form button:hover,
+.signup-form button:hover{
+    background-color: #fff;
+    color: #221f20;
+}
+.signup-form button:hover a{
+    color: #221f20;
+}
+
+.login-page::before{
+    position: absolute;
+    content: "";
+    height: 300px;
+    width: 1px;
+    left: 50%;
+    top: 120px;
+    background-color: #e7e8e9;
+}

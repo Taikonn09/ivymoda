@@ -1,0 +1,108 @@
+/* giỏ hàng */
+.shopping-cart {
+    cursor: pointer;
+    outline: none;
+}
+
+#show-cart {
+    width: 380px;
+    /* border: 1px solid #221f20; */
+}
+
+#show-cart {
+    position: absolute;
+    top: 80px;
+    right: -453px;
+    /* bắt đầu từ bên phải của trang */
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    z-index: 9999;
+    transition: transform 0.4s ease-in-out;
+    /* thêm hiệu ứng di chuyển */
+}
+
+#show-cart.show {
+    transform: translateX(-425px);
+    /* di chuyển sang trái 425px */
+}
+
+.title-cart{
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 20px 0px 20px 20px;
+    border-bottom: 1px solid #221f20;
+    pointer-events: none;
+    font-weight: 600;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.view-cart a{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.view-cart a:hover{
+    background-color: #221f20;
+    color: #fff;
+}
+
+#checkout button[type='submit']{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #221f20;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+#checkout button[type='submit'] a{
+    color: #fff;
+}
+
+#checkout button[type='submit']:hover{
+    background-color: #fff;
+    border: 1px solid #221f20;
+}
+#checkout button[type='submit'] a:hover{
+    color: #221f20;
+}
+
+
+/*-----------------------------------------sản phẩm đc thêm vào giỏ hàng-------------------------------------*/
+#cart-items li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+
+
+#cart-total{
+    position: absolute;
+    width: 100%;
+    bottom: 110px;
+    right: -65%;
+
+}

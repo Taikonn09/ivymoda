@@ -1,0 +1,99 @@
+.content-right {
+    width: 80%;
+    margin: 10px 0px 0px 0px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.form-product-add {
+    width: 1150px;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form-product-add h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-product-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.thead-product-list {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tbody-product-list .td-product-list{
+    font-size: 13px;
+}
+
+.tr-product-list:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.th-product-list,
+.td-product-list {
+    text-align: center;
+    padding: 10px;
+}
+
+.th-product-list:nth-child(1) {
+    width: 5%;
+}
+
+.th-product-list:nth-child(2) {
+    width: 15%;
+}
+
+.th-product-list:nth-child(3) {
+    width: 15%;
+}
+
+.th-product-list:nth-child(4) {
+    width: 15%;
+}
+
+.th-product-list:nth-child(5) {
+    width: 35%;
+}
+
+.th-product-list:nth-child(6) {
+    width: 15%;
+}
+
+ /*-------------nội dung table---------------------*/
+ .td-product-list:nth-child(2) img {
+    width: 100px;
+    height: 100px;
+}
+.td-product-list:nth-child(3)  {
+    color: #0000FF;
+}
+.td-product-list:nth-child(4)  {
+    color: red;
+}
+
+
+.td-product-list button {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.td-product-list button:hover {
+    background-color: #ff1a1a;
+}

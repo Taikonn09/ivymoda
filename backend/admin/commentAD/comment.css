@@ -1,0 +1,65 @@
+
+    .product{
+        color: #00FF00;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #EE0000;
+    }
+
+    tr:nth-child(even) {
+        background-color: #999999;
+        color: white;
+    }
+
+	.content-title h1{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	table {
+		border-collapse: collapse;
+		width: 95%;
+		margin: 0px auto;
+	}
+	th, td {
+		padding: 8px;
+		text-align: left;
+		border-bottom: 1px solid #EE0000dd;
+	}
+	th {
+		background-color: #f2f2#EE0000f2;
+		color: #333;
+		font-weight: bold;
+	}
+
+
+	
+	.id{
+		width: 2%;
+	}
+	.product-name {
+		width: 20%;
+	}
+	.user_name{
+		width: 15%;
+	}
+	
+	.time {
+		width: 15%;
+	}
+	.content {
+		width: 48%;
+	}
+
+    .id, .product-name , .user_name, .time, .content {
+        font-size: 14px;
+    }
