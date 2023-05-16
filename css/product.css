@@ -1,0 +1,132 @@
+
+#product-list {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    position: relative;
+    width: 20%;
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.product-item:first-child {
+    margin: 0px 10px 0px 0px;
+}
+
+.product-item:last-child {
+    margin: 0px 0px 0px 10px;
+}
+
+.badget {
+    position: absolute;
+    background-color: orange;
+    padding: 10px 15px;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    right: 10px;
+    top: 10px;
+    font-weight: 600;
+}
+
+.product-item img {
+    width: 246px;
+}
+
+.product-name {
+    color: #57585a;
+    font-size: 14px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 32px;
+    display: -webkit-box;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #6c6d70;
+    display: flex;
+    align-items: center;
+}
+
+.price-new {
+    color: #3e3e3f;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.price-old {
+    color: #a8a9ad;
+    font-size: 13px;
+}
+#size-select{
+    background-color: #fff;
+    border: 1px solid #221f20;
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+
+#size-select li {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+#size-select li.selected {
+    background-color: black;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
+/* khúc css của cái button addtocart dc dem sang file style.css vì khi ở đó nó mới thực thi, đm :) */
+
+.product-item button:hover {
+    color: #221f20;
+    background-color: #fff;
+}
+
+
+
+/*---------------------------màu sản phẩm---------------------------------*/
+.color-list {
+    display: flex;
+    margin-top: 10px;
+}
+
+.color-option {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid transparent;
+    border-color: #000;
+}
+
+.color-option.checked {
+    background-image: url("images/tick.png"); /* Đường dẫn đến hình ảnh dấu tích */
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.color-list input[type="radio"] {
+    display: none;
+}
+
+

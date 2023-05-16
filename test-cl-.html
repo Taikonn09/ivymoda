@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Trang chủ | IVY Moda</title>
+</head>
+
+<body>
+    <div class="container-page">
+        <header id="header-page" #top>
+            <nav class="nav-page">
+                <li>
+                    <a href="">Nữ</a>
+                </li>
+                <li><a href="">nam</a></li>
+                <li><a href="">trẻ em</a></li>
+                <li><a style="color: #ff0000" href="">sale đại lễ</a></li>
+                <li><a href="">bộ sưu tập</a></li>
+                <li><a href="">lifestyle</a></li>
+                <li><a href="">về chúng tôi</a></li>
+            </nav>
+
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo YVI">
+            </a>
+
+            <article class="header-right">
+                <section class="header-right-item">
+
+                    <form class="search-box" method="GET">
+                        <div>
+                            <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <input type="text" placeholder="TÌM KIẾM SẢN PHẨM">
+                    </form>
+                    <ul>
+                        <li><a href="#"><span class="material-symbols-outlined">headphones</span></a></li>
+                        <li><a href="login-signup/index.php"><span class="material-symbols-outlined">person</span></a>
+                        </li>
+
+                        <!-- -----------------------------------------giỏ hàng------------------------------------ -->
+                        <li>
+                            <a class="shopping-cart" onclick="showCart()">
+                                <span class="material-symbols-outlined">local_mall</span>
+                                <!-- <p id="lenght-cart">0</p> -->
+                            </a>
+
+                            <div id="show-cart">
+                                <div>
+                                    <p class="title-cart">Giỏ hàng</p>
+                                    <button style="background-color: #000; color: #fff;" class="close-btn" type="button"
+                                        onclick="hideCart()"><span
+                                            class="material-symbols-outlined">close</span></button>
+                                </div>
+
+                                <div id="my-cart">
+                                    <p id="cart-items"></p>
+                                    <p id="cart-total">Tổng tiền: <span> 0 đ</span></p>
+                                </div>
+
+                                <div id="checkout">
+                                    <a href="cart.html">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </header>
+    </div>
+
+    <section class="new-product container-page">
+        <h1>New Arrival</h1>
+
+        <ul id="product-list">
+            <li class="product-item">
+                <span class="badget">-30%</span>
+                <a href="#"><img src="images/product1.jpg" alt="product-img"></a>
+
+                <div class="color-list">
+                    <label>
+                        <input type="radio" name="color" value="white" checked>
+                        <span class="color-option" style="background-color: white;"></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="black">
+                        <span class="color-option" style="background-color: black;"></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="pink">
+                        <span class="color-option" style="background-color: pink; border-color: pink;"></span>
+                    </label>
+                </div>
+
+                <p class="product-name">Đầm xòe thắt dây eo</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="product-price">
+                        <p class="price-new">1.113.000đ</p>
+                        <p class="price-old">1.590.000đ</p>
+                    </div>
+                    <ul id="size-select" class="hidden">
+                        <li onclick="selectSize(this)">S</li>
+                        <li onclick="selectSize(this)">M</li>
+                        <li onclick="selectSize(this)">L</li>
+                        <li onclick="selectSize(this)">XL</li>
+                        <li onclick="selectSize(this)">XXL</li>
+                    </ul>
+                    <button type="button" class="add-to-cart">
+                        <span class="material-symbols-outlined">local_mall</span>
+                    </button>
+                </div>
+            </li>
+
+<script src="js/product.js"></script>

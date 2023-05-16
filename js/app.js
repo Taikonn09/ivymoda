@@ -69,39 +69,17 @@ function hideCart() {
     x.classList.remove("show");
 }
 
-//-----------------------thêm sp vào giỏ hàng-----------------------------
-let cartItems = []; // mảng chứa thông tin sản phẩm
-let cartCount = 0; // biến đếm số lượng sản phẩm trong giỏ hàng
 
-// Lấy tất cả các nút "Thêm vào giỏ hàng" và gán sự kiện click cho chúng
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-addToCartButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Lấy thông tin sản phẩm từ các phần tử HTML tương ứng
-    const productName = button.parentNode.parentNode.querySelector('.product-name').textContent;
-    const productPrice = button.parentNode.querySelector('.price-new').textContent;
 
-    // Tạo đối tượng sản phẩm
-    const product = { name: productName, price: productPrice };
 
-    // Thêm sản phẩm vào mảng và tăng biến đếm
-    cartItems.push(product);
-    cartCount++;
 
-    // Hiển thị số lượng sản phẩm trên biểu tượng giỏ hàng
-    const cartBadge = document.querySelector('.shopping-cart');
-    cartBadge.innerHTML = `<span class="material-symbols-outlined">local_mall</span><p>${cartCount}</p>`;
 
-    // Hiển thị sản phẩm trong giỏ hàng
-    const cartList = document.querySelector('#cart-items');
-    cartList.innerHTML += `<li>${productName} - ${productPrice}</li>`;
 
-    // Tính tổng tiền trong giỏ hàng
-    let cartTotal = 0;
-    cartItems.forEach(item => {
-      cartTotal += parseInt(item.price.replace(/\D/g, ''));
-    });
-    document.querySelector('#cart-total').textContent = `Tổng tiền: ${cartTotal} đ`;
-  });
-});
 
+
+
+
+
+  
+  
+  

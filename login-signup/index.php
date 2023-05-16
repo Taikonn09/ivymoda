@@ -1,3 +1,36 @@
+<?php
+    include '../database/connectDB.php'
+?>
+<?php
+session_start();  // Bắt đầu phiên làm việc
+
+// Kiểm tra nếu có dữ liệu submit đi
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user_name = $_POST['user_name'];
+    $pass_word = $_POST['pass_word'];
+
+    // Thực hiện truy vấn kiểm tra tài khoản
+    $sql = "SELECT * FROM user WHERE user_name = '$user_name' AND pass_word = '$pass_word'";
+    $result = mysqli_query($conn, $sql);
+
+    // Kiểm tra kết quả truy vấn
+    if (mysqli_num_rows($result) > 0) {
+        // Tài khoản đăng nhập đúng
+        $_SESSION['user_name'] = $user_name;
+        $userLoggedIn = true; // Cập nhật giá trị $userLoggedIn thành true
+        echo "Đăng nhập thành công";
+        header("Location: ../test.php");
+        exit();
+    } else {
+        // Tài khoản đăng nhập sai
+        echo "<script>alert('Sai tài khoản hoặc mật khẩu ^^');</script>";
+    }
+}
+// Đóng kết nối
+mysqli_close($conn);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,9 +72,12 @@
 
             <article class="header-right">
                 <section class="header-right-item">
-                    <button type="submit" action="tk.php" method="POST"><span
-                            class="material-symbols-outlined">search</span></button>
-                    <input type="text" placeholder="TÌM KIẾM SẢN PHẨM">
+                    <form class="search-box" method="GET">
+                        <div>
+                            <button><span class="material-symbols-outlined">search</span></button>
+                        </div>
+                        <input type="text" placeholder="TÌM KIẾM SẢN PHẨM">
+                    </form>
 
                     <ul>
                         <li><a href="#"><span class="material-symbols-outlined">headphones</span></a></li>
@@ -56,18 +92,18 @@
 
     <article id="main-login-page" class="container-login">
         <section class="login-page">
-            <form class="login-form">
+            <form class="login-form" method="POST">
                 <h1>Bạn đã có tài khoản IVY</h1>
                 <p>Nếu bạn đã có tài khoản, hãy đăng nhập để tích lũy điểm thành viên và nhận được những ưu đãi tốt hơn!
                 </p>
 
                 <div class="input-box">
-                    <input type="text" placeholder=" " required>
+                    <input type="text" placeholder=" " required name="user_name">
                     <label>Tên đăng nhập</label>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder=" " required>
+                    <input type="password" placeholder=" " required name="pass_word">
                     <label>Mật khẩu</label>
                 </div>
 
@@ -92,11 +128,13 @@
                 <p>Bằng cách cung cấp cho IVY moda thông tin chi tiết của bạn, quá trình mua hàng trên ivymoda.com sẽ là
                     một trải nghiệm thú vị và nhanh chóng hơn!</p>
                 <button type="submit">
-                    <a href="signup.html">Đăng ký</a>
+                    <a href="signup.php">Đăng ký</a>
                 </button>
             </form>
         </section>
     </article>
+
+    
 </body>
 
 </html>

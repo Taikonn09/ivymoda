@@ -26,7 +26,7 @@
 .form-signup h1{
     text-align: center;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .form-signup form{
     padding: 20px 0px;
@@ -35,7 +35,7 @@
 .input-box{
     width: 80%;
     height: 50px;
-    margin: 35px auto 35px auto;
+    margin: 25px auto 35px auto;
     position: relative;
 }
 .input-box span{
@@ -83,11 +83,11 @@
 
 form p{
     text-align: center;
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
-form div button{
-    margin-top: 40px;
+.btn-signup{
+    margin-top: 35px;
     font-size: 25px;
     background-color: #000;
     color: #fff;
@@ -98,7 +98,7 @@ form div button{
     cursor: pointer;
     width: 80%;
 }
-form div button:hover{
+.btn-signup:hover{
     background-color: #fff;
     color: #000;
 }
@@ -107,7 +107,8 @@ form div button:hover{
     text-align: center;
     font-size: 16px;
     color: black;
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 .location-page a{
     color: #000;
@@ -118,4 +119,12 @@ form div button:hover{
 .location-page a:hover{
     text-decoration: underline;
     color: #ac2f33;
+}
+
+
+/*thông báo đăng ký tài khoản*/
+.mesage-signup{
+    text-align: center;
+    position: absolute;
+    top: 30%;
 }
